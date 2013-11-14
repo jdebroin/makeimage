@@ -3,12 +3,12 @@
     <!--this file was created by Eclipse Runnable JAR Export Wizard-->
     <!--ANT 1.7 is required                                        -->
     <target name="create_run_jar">
-        <jar destfile="/mnt/sda2/zede/workspace-jee/makeimage/makeimage.jar" filesetmanifest="mergewithoutmain">
+        <jar destfile="makeimage.jar" filesetmanifest="mergewithoutmain">
             <manifest>
                 <attribute name="Main-Class" value="org.duldeb.makeimage.MakeImage"/>
                 <attribute name="Class-Path" value="."/>
             </manifest>
-            <fileset dir="/mnt/sda2/zede/workspace-jee/makeimage/bin"/>
+            <fileset dir="bin"/>
         </jar>
     </target>
 </project>

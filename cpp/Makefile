@@ -14,10 +14,10 @@ INCS = Drawing.h
 OBJS = makeimage.o Drawing.o
 
 makeimage: $(OBJS)
-	g++ -o $@ $^ -pg
+	g++ -o $@ $^
 
 %.o: %.cpp $(INCS)
-	g++ -g -c -o $@ $< -pg
+	g++ -c -o $@ $<
 
 .PHONY: clean
 

@@ -11,9 +11,9 @@ int main(int argc, char* argv[]) {
 
     unsigned int blockSize = 100;
     Drawing d;
-    for (int i = 0; i < 100; i++) {
+    //for (int i = 0; i < 1000; i++) {
         d.create(blockSize);
-    }
+    //}
 
     f.write((const char*) d.getBuffer(), d.getBufferSize());
 
